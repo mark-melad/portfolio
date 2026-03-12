@@ -1,0 +1,45 @@
+===================================================
+  Webhook Tunnel Setup Log
+  Date: 2026-03-12
+===================================================
+
+ISSUE 1 — ngrok ERR_NGROK_15013
+---------------------------------
+Error   : "Your account is requesting a dev domain that does not exist."
+Cause   : The ngrok account previously had a free static domain reserved
+          (e.g. something.ngrok-free.app) that was deleted or expired.
+          ngrok v3 always tries to reuse that domain and fails if it no
+          longer exists at the account level.
+Fix     : Switched to localtunnel (via npx) as the tunnel provider.
+          ngrok can be re-enabled by going to:
+          https://dashboard.ngrok.com/domains → "New Domain" → claim a
+          free static domain → then run:
+            "D:\ngrok-v3-stable-windows-amd64\ngrok.exe" http 8001
+
+ISSUE 2 — ngrok override config not found on first pass
+---------------------------------------------------------
+Error   : "open d:\Email Sender Agent\cv-agent\ngrok-override.yml:
+          The system cannot find the file specified."
+Cause   : The override config file was created after ngrok had already
+          launched (race condition between Write and background process).
+Fix     : Non-issue once we switched to localtunnel.
+
+RESOLUTION
+----------
+Tool    : localtunnel v2.0.2 (via npx)
+Command : npx localtunnel --port 8001
+Server  : http://localhost:8001 (FastAPI — confirmed HTTP 200)
+Status  : RUNNING (PID 6358)
+
+===================================================
+  WEBHOOK URL  →  https://rude-rocks-talk.loca.lt
+===================================================
+
+Meta Dashboard settings:
+  Callback URL   : https://rude-rocks-talk.loca.lt/webhook/whatsapp
+  Verify Token   : cv-agent-verify
+
+NOTE: localtunnel URL changes on every restart.
+      For a permanent URL use ngrok paid (fixed domain) or deploy
+      the app to a public server.
+===================================================

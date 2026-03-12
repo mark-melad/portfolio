@@ -1,0 +1,26 @@
+{"lvl":"info","msg":"no configuration paths supplied","t":"2026-03-12T11:25:20.6912607+02:00"}
+{"lvl":"info","msg":"using configuration at default config path","path":"C:\\Users\\hp\\AppData\\Local\\ngrok\\ngrok.yml","t":"2026-03-12T11:25:20.6917881+02:00"}
+{"err":"\u003cnil\u003e","lvl":"info","msg":"open config file","path":"C:\\Users\\hp\\AppData\\Local\\ngrok\\ngrok.yml","t":"2026-03-12T11:25:20.6917881+02:00"}
+{"enabled":false,"lvl":"info","msg":"FIPS 140 mode","t":"2026-03-12T11:25:20.6938105+02:00"}
+{"addr":"127.0.0.1:4040","allow_hosts":null,"lvl":"info","msg":"starting web service","obj":"web","t":"2026-03-12T11:25:20.7345984+02:00"}
+{"lvl":"info","msg":"client session established","obj":"tunnels.session","t":"2026-03-12T11:25:21.3459654+02:00"}
+{"lvl":"info","msg":"tunnel session started","obj":"tunnels.session","t":"2026-03-12T11:25:21.3464702+02:00"}
+{"err":"failed to start tunnel: Your account is requesting a dev domain that does not exist. Visit https://dashboard.ngrok.com/domains to request a dev domain.\r\n\r\nERR_NGROK_15013\r\n","lvl":"eror","msg":"session closing","obj":"tunnels.session","t":"2026-03-12T11:25:21.4589671+02:00"}
+{"err":"reconnecting session closed","id":"bab3b59f321d","lvl":"info","msg":"accept failed","obj":"csess","t":"2026-03-12T11:25:21.4594037+02:00"}
+{"lvl":"info","msg":"no more state changes","obj":"tunnels.session","t":"2026-03-12T11:25:21.4594037+02:00"}
+{"lvl":"info","msg":"received stop request","obj":"app","stopReq":{},"t":"2026-03-12T11:25:21.4598292+02:00"}
+{"err":"failed to start tunnel: Your account is requesting a dev domain that does not exist. Visit https://dashboard.ngrok.com/domains to request a dev domain.\r\n\r\nERR_NGROK_15013\r\n","lvl":"eror","msg":"terminating with error","obj":"app","t":"2026-03-12T11:25:21.4598292+02:00"}
+{"err":"failed to start tunnel: Your account is requesting a dev domain that does not exist. Visit https://dashboard.ngrok.com/domains to request a dev domain.\r\n\r\nERR_NGROK_15013\r\n","lvl":"crit","msg":"command failed","t":"2026-03-12T11:25:21.4598292+02:00"}
+{"err":"Post \"https://update.ngrok-agent.com/check\": context canceled","lvl":"warn","msg":"failed to check for update","obj":"updater","t":"2026-03-12T11:25:21.4606253+02:00"}
+{"err":"open d:\\Email Sender Agent\\cv-agent\\ngrok-override.yml: The system cannot find the file specified.","lvl":"info","msg":"open config file","path":"d:\\Email Sender Agent\\cv-agent\\ngrok-override.yml","t":"2026-03-12T11:26:36.9620316+02:00"}
+{"err":"\u003cnil\u003e","lvl":"info","msg":"open config file","path":"d:\\Email Sender Agent\\cv-agent\\ngrok-override.yml","t":"2026-03-12T11:26:50.8259933+02:00"}
+{"enabled":false,"lvl":"info","msg":"FIPS 140 mode","t":"2026-03-12T11:26:50.8276897+02:00"}
+{"addr":"127.0.0.1:4040","allow_hosts":null,"lvl":"info","msg":"starting web service","obj":"web","t":"2026-03-12T11:26:50.8603197+02:00"}
+{"lvl":"info","msg":"client session established","obj":"tunnels.session","t":"2026-03-12T11:26:51.1399069+02:00"}
+{"lvl":"info","msg":"tunnel session started","obj":"tunnels.session","t":"2026-03-12T11:26:51.1407142+02:00"}
+{"err":"failed to start tunnel: Your account is requesting a dev domain that does not exist. Visit https://dashboard.ngrok.com/domains to request a dev domain.\r\n\r\nERR_NGROK_15013\r\n","lvl":"eror","msg":"session closing","obj":"tunnels.session","t":"2026-03-12T11:26:51.2167106+02:00"}
+{"err":"reconnecting session closed","id":"13557ec283fc","lvl":"info","msg":"accept failed","obj":"csess","t":"2026-03-12T11:26:51.2172276+02:00"}
+{"lvl":"info","msg":"no more state changes","obj":"tunnels.session","t":"2026-03-12T11:26:51.2172276+02:00"}
+{"lvl":"info","msg":"received stop request","obj":"app","stopReq":{},"t":"2026-03-12T11:26:51.2172276+02:00"}
+{"err":"failed to start tunnel: Your account is requesting a dev domain that does not exist. Visit https://dashboard.ngrok.com/domains to request a dev domain.\r\n\r\nERR_NGROK_15013\r\n","lvl":"eror","msg":"terminating with error","obj":"app","t":"2026-03-12T11:26:51.2172276+02:00"}
+{"err":"failed to start tunnel: Your account is requesting a dev domain that does not exist. Visit https://dashboard.ngrok.com/domains to request a dev domain.\r\n\r\nERR_NGROK_15013\r\n","lvl":"crit","msg":"command failed","t":"2026-03-12T11:26:51.2178044+02:00"}

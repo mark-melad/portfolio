@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m venv venv)",
+      "Bash(venv/Scripts/pip install --upgrade pip -q)",
+      "Bash(venv/Scripts/pip install -r requirements.txt)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/)",
+      "Bash(start http://localhost:8000)",
+      "Bash(Start-Process -FilePath \"venv/Scripts/uvicorn.exe\" -ArgumentList \"main:app\",\"--port\",\"8000\" -WindowStyle Hidden -RedirectStandardOutput \"uvicorn.log\" -RedirectStandardError \"uvicorn.err\")",
+      "Bash(netstat -ano)",
+      "Bash(taskkill //F //PID 40664 //PID 29544)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\" http://localhost:8000/)",
+      "Bash(taskkill //F //PID 5530)",
+      "Bash(taskkill //F //PID 31676)",
+      "Bash(venv/Scripts/python test_cv.py)"
+    ]
+  }
+}
